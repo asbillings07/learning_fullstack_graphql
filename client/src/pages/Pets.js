@@ -20,9 +20,10 @@ const ADD_PET = gql`
 mutation ADD_PET ($newPet: NewPetInput!) {
   addPet(input: $newPet) {
     name
-    id
     type
-    createdAt
+    id
+    img
+
   }
 }
 

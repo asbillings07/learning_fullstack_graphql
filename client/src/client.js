@@ -14,3 +14,5 @@ const client = new ApolloClient({
     link,
     cache
 })
+
+export default client
