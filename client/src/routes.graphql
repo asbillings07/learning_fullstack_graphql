@@ -1,0 +1,17 @@
+export query ALL_PETS {
+    pets {
+    name
+    type
+    id
+    img
+  }
+}
+
+export mutation ADD_PET ($newPet: NewPetInput!) {
+  addPet(input: $newPet) {
+    name
+    id
+    type
+    createdAt
+  }
+}
